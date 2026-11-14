@@ -1,0 +1,10 @@
+node_modules
+dist/
+scratch/
+cn-link-grabber-v*/
+*.zip
+.env
+.env.*
+.DS_Store
+Thumbs.db
+*.log
