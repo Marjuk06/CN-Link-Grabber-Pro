@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    try {
+      document.querySelector('meta[name="color-scheme"]').content = localStorage.getItem('color-scheme') ?? 'light dark';
+    } catch (_) {}
+  </script>
+  <title>CN Link Grabber Pro — Course Resource Grabber, Batch PDF Saver &amp; Video Trimmer</title>
+  <meta name="description" content="Cross-browser Manifest V3 extension for extracting course media, batch-downloading lecture PDFs, and trimming MP4/HLS clips locally in the browser.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <img src="assets/logo.png" alt="CN Link Grabber Pro logo" width="36" height="36">
+        <span>CN Link Grabber Pro</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#workflow">How It Works</a>
+        <a href="#faq">FAQ</a>
+        <a href="#support">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" id="theme-toggle" class="theme-btn" aria-label="Toggle color theme" title="Toggle Light / Dark theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <a href="https://marjuk06.gumroad.com/coffee" target="_blank" rel="noopener noreferrer" class="btn btn-coffee">
+          Buy Me a Coffee
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-badge">Version 4.1.0 • Chrome, Edge &amp; Firefox (Manifest V3)</div>
+        <h1>Academic Link Grabber &amp; Local Video Trimmer</h1>
+        <p class="lead">
+          Collect course videos, Google Drive™ documents, and lecture PDFs from your active tab in one click, and trim MP4 or HLS clips locally inside your browser without server uploads.
+        </p>
+
+        <div class="hero-cta">
+          <a href="https://microsoftedge.microsoft.com/addons/detail/cn-link-grabber-pro/eobggdfbehldfegkhebhcecaknblgipj" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Install for Microsoft Edge
+          </a>
+          <a href="https://addons.mozilla.org/en-US/firefox/addon/cn-link-grabber-pro/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            Install for Firefox
+          </a>
+          <a href="https://github.com/Marjuk06/CN-Link-Grabber-Pro" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            View Source on GitHub
+          </a>
+        </div>
+
+        <div class="hero-stores">
+          <span>100% Client-Side Processing</span>
+          <span>•</span>
+          <span>Zero Tracking or Ads</span>
+          <span>•</span>
+          <span>Open Source (MIT License)</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>Built for Focused Study Workflows</h2>
+          <p>Everything runs locally inside a compact Burgundy sidebar or your browser's native side panel.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </div>
+            <h3>Smart Media &amp; Embed Detection</h3>
+            <p>Automatically detects YouTube™ embeds, Vimeo, Loom, Zoom recordings, and direct MP4 or HLS course streams with clean titles.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+            </div>
+            <h3>Batch PDF &amp; Drive Saver</h3>
+            <p>Recognizes Google Drive™ files, folders, direct PDFs, and canvas-based PDF viewers. Batch-save lecture handouts into organized subfolders.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><line x1="20" y1="4" x2="8.12" y2="15.88"></line></svg>
+            </div>
+            <h3>Lossless Video Trimmer Studio</h3>
+            <p>Trim MP4 files and parallel HLS segments directly in browser memory using keyframe-aligned remuxing—preserving 100% original quality.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <h3>Cross-Tab Global Vault</h3>
+            <p>Pin priority lectures and save resources across multiple tabs in persistent local storage so your study list stays intact.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            </div>
+            <h3>Study-Ready Exports</h3>
+            <p>Copy or export selected resources as plain text, Markdown lists, Obsidian notes, Notion tables, HTML, or CSV spreadsheets.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3>Private by Architecture</h3>
+            <p>Zero telemetry, zero ads, and zero external video processing. Everything executes locally inside your browser sandbox.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="workflow">
+      <div class="container">
+        <div class="section-header">
+          <h2>How It Works</h2>
+          <p>Designed to stay out of your way until you need to grab or organize course files.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <h3>Open Any Course Page</h3>
+            <p>Navigate to your university portal, LMS, or resource page and click the CN Link Grabber Pro toolbar icon.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <h3>Review &amp; Filter</h3>
+            <p>The sidebar groups detected videos, streams, PDFs, and Drive links. Use Search or Auto-Scroll for dynamic pages.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <h3>Save, Export, or Trim</h3>
+            <p>Batch-save PDFs to subject folders, copy formatted notes, or launch the Video Studio to trim MP4/HLS clips locally.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>Quick answers about compatibility, privacy, and supported browsers.</p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Which browsers are supported?</summary>
+            <p>CN Link Grabber Pro supports Google Chrome, Microsoft Edge, Brave, and Mozilla Firefox using Manifest V3.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Are my videos or course links uploaded to any server?</summary>
+            <p>No. Link scanning, PDF batching, and MP4/HLS trimming happen strictly inside your browser. No browsing history or extracted URLs leave your device.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How can I request support for my university portal?</summary>
+            <p>Use the Support &amp; Feature Request form below or the Contact button inside the extension sidebar footer, and include the portal domain or layout details.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is CN Link Grabber Pro free to use?</summary>
+            <p>Yes, it is completely free and open source under the MIT License. Optional tips via Gumroad help cover maintenance and testing.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="support">
+      <div class="container">
+        <div class="section-header">
+          <h2>Support &amp; Feature Requests</h2>
+          <p>Found a bug or want support for a specific learning portal? Reach out directly.</p>
+        </div>
+
+        <div class="support-layout">
+          <div class="card">
+            <h3>Direct Contact Channels</h3>
+            <p style="margin-bottom: 16px;">
+              Developed and maintained by <strong>Marjuk Amin</strong>. Messages submitted through this page or the extension sidebar are routed directly to the developer.
+            </p>
+            <p style="margin-bottom: 10px;">
+              <strong>Email:</strong> <a href="mailto:contact@marjukamin.com">contact@marjukamin.com</a>
+            </p>
+            <p style="margin-bottom: 10px;">
+              <strong>Issue Tracker:</strong> <a href="https://github.com/Marjuk06/CN-Link-Grabber-Pro/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a>
+            </p>
+            <p style="margin-bottom: 18px;">
+              <strong>Portfolio:</strong> <a href="https://marjukamin.com" target="_blank" rel="noopener noreferrer">marjukamin.com</a>
+            </p>
+            <a href="https://marjuk06.gumroad.com/coffee" target="_blank" rel="noopener noreferrer" class="btn btn-coffee" style="width: 100%;">
+              Support Development on Gumroad
+            </a>
+          </div>
+
+          <div class="card">
+            <form id="support-form" novalidate>
+              <div class="field">
+                <label for="support-name">Your Name</label>
+                <input type="text" id="support-name" name="name" required autocomplete="name" placeholder="Marjuk Amin" data-error="name-error">
+                <div id="name-error" class="error-msg">Error: Please enter your name.</div>
+              </div>
+
+              <div class="field">
+                <label for="support-email">Email Address</label>
+                <span id="email-hint" class="hint">Format: you@example.com</span>
+                <input type="email" id="support-email" name="email" required autocomplete="email" placeholder="you@example.com" aria-describedby="email-hint" data-error="email-error">
+                <div id="email-error" class="error-msg">Error: Enter an email address in the format you@example.com.</div>
+              </div>
+
+              <div class="field">
+                <label for="support-category">Topic</label>
+                <select id="support-category" name="category">
+                  <option value="New Feature Request">New Feature / Portal Request</option>
+                  <option value="Bug Report">Bug Report</option>
+                  <option value="General Support">General Support</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="support-message">Message</label>
+                <textarea id="support-message" name="message" required placeholder="Describe the issue, feature idea, or portal URL..." data-error="message-error"></textarea>
+                <div id="message-error" class="error-msg">Error: Please enter a message describing your request.</div>
+              </div>
+
+              <button type="submit" id="support-submit" class="btn btn-primary" style="width: 100%;">
+                Send Support Message
+              </button>
+              <div id="support-status" class="form-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacy">
+      <div class="container">
+        <div class="privacy-box">
+          <h2 style="margin: 0 0 8px;">Privacy Summary</h2>
+          <p style="margin: 0; color: var(--text-secondary);">
+            CN Link Grabber Pro is built to respect user privacy. Read the full <a href="privacy.html">Privacy Policy</a>.
+          </p>
+          <ul>
+            <li><strong>No Personal Data Collection:</strong> We do not collect, track, sell, or share browsing history or extracted webpage links.</li>
+            <li><strong>Local-Only Storage:</strong> Theme preferences and Cross-Tab Vault items stay locally in your browser via <code>chrome.storage.local</code>.</li>
+            <li><strong>Local Media Processing:</strong> All PDF batch downloads and MP4/HLS trims run directly in your browser without remote server uploads.</li>
+            <li><strong>Voluntary Support Submissions:</strong> Contact form submissions are used solely to reply to your support or feature inquiry.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>&copy; 2026 Marjuk Amin. Released under the MIT License.</div>
+        <div class="footer-links">
+          <a href="https://microsoftedge.microsoft.com/addons/detail/cn-link-grabber-pro/eobggdfbehldfegkhebhcecaknblgipj" target="_blank" rel="noopener noreferrer">Edge Add-ons</a>
+          <a href="https://addons.mozilla.org/en-US/firefox/addon/cn-link-grabber-pro/" target="_blank" rel="noopener noreferrer">Firefox Add-ons</a>
+          <a href="https://github.com/Marjuk06/CN-Link-Grabber-Pro" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="trademark-note">
+          YouTube and Google Drive are trademarks of Google LLC. Use of these trademarks is subject to Google Permissions.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
